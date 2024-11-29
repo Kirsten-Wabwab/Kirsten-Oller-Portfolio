@@ -1,0 +1,208 @@
+.contact-container {
+  position: relative;
+  width: 600px;
+  padding: 100px 0;
+}
+
+.duck {
+  position: absolute;
+  top: 23px;
+  left: -5px;
+  width: 100px;
+  height: 100px;
+  z-index: 10;
+}
+
+/* Wrapper, Form, & Header */
+
+.wrapper {
+  width: 600px;
+  background: linear-gradient(0deg, #29759b4a, #00000000);
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(50px);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  color: #fff;
+  border-radius: 15px;
+  padding: 30px 0px;
+}
+
+.wrapper form {
+  padding: 0px 30px 0px 30px;
+}
+
+.wrapper form h1 {
+  font-size: 36px;
+  text-align: center;
+  text-shadow: 2px 2px 17px rgb(104, 149, 186);
+}
+
+.wrapper form .title {
+  font-size: 35px;
+  font-weight: 600;
+  text-align: center;
+  color: #fff;
+  user-select: none;
+  margin-bottom: 1.5rem;
+}
+
+/* Input Box - Standard Types */
+
+.wrapper form .input-box-single {
+  position: relative;
+  width: 100%;
+  padding-right: 9px;
+  padding-left: 9px;
+}
+
+.wrapper form .input-box-span {
+  position: relative;
+  width: 100%;
+  padding-right: 9px;
+  padding-left: 9px;
+  height: 150px;
+}
+
+/* Form - Input Box */
+
+.wrapper form .input-box {
+  width: 100%;
+  height: 50px;
+  position: relative;
+  margin-bottom: 1.5rem;
+}
+
+.wrapper form .input-box input:focus,
+.wrapper form .input-box input:valid,
+.wrapper form .input-box textarea:focus,
+.wrapper form .input-box textarea:valid {
+  border: 2px solid rgba(255, 255, 255, 0.8);
+  transition: border-color 0.3s ease;
+}
+
+.wrapper form .input-box label {
+  position: absolute;
+  top: 50%;
+  left: 20px;
+  color: #ffffff;
+  font-weight: 400;
+  font-size: 17px;
+  pointer-events: none;
+  transform: translateY(-50%);
+  transition: all 0.3s ease;
+}
+
+.wrapper form .input-box input:focus ~ label,
+.wrapper form .input-box input:not(:placeholder-shown) ~ label,
+.wrapper form .input-box textarea:focus ~ label,
+.wrapper form .input-box textarea:valid ~ label {
+  top: 0%;
+  font-size: 16px;
+  color: #ffffff;
+  background: #50c8c4;
+  border-radius: 5px;
+  padding: 2px 5px 2px 5px;
+  transform: translateY(-60%);
+}
+
+.wrapper form .input-box input {
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  border: none;
+  outline: none;
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  font-size: 16px;
+  color: #fff;
+  padding-left: 20px;
+  padding-right: 20px;
+  border-radius: 15px;
+  transition: all 0.3s ease;
+}
+
+.input-box i {
+  position: absolute;
+  right: 20px;
+  top: 25px;
+  transform: translateY(-50%);
+  font-size: 20px;
+  color: #fff;
+}
+
+/* Input Box - Textarea */
+
+.wrapper form .input-box textarea {
+  width: 100%;
+  height: 250%;
+  background: transparent;
+  border: none;
+  outline: none;
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  font-size: 16px;
+  color: #fff;
+  padding: 11px 20px;
+  border-radius: 15px;
+  transition: all 0.3s ease;
+  box-sizing: border-box;
+  overflow: auto;
+  resize: none;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+textarea::-webkit-scrollbar {
+  display: none;
+}
+
+/* Footer */
+
+.wrapper .btn {
+  width: 100%;
+  height: 45px;
+  background: #fff;
+  border: none;
+  outline: none;
+  border-radius: 40px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  font-size: 16px;
+  color: #50c8c4;
+  font-weight: 600;
+}
+
+.wrapper .btn:hover {
+  outline: none;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.6);
+  transition: box-shadow 0.3s ease;
+}
+
+.wrapper .register-link {
+  font-size: 14.5px;
+  text-align: center;
+  margin: 20px 0 15px;
+  text-shadow: 2px 2px 17px rgba(139, 181, 215, 0.709);
+}
+
+.register-link p {
+  margin-top: 10px;
+}
+
+.register-link p a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+  margin-left: 10px;
+  padding: 2px 5px 2px 5px;
+}
+
+.register-link p a:hover {
+  background: #50c8c4;
+  border-radius: 5px;
+}
+
+.copyright {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 10px;
+  text-shadow: 2px 2px 17px rgba(134, 95, 28, 0.821);
+  user-select: none;
+}
