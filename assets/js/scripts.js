@@ -1,6 +1,7 @@
 document.addEventListener('DOMContentLoaded', function() {
     const loginForm = document.getElementById('login-form');
     const registerForm = document.getElementById('register-form');
+    const logoutButton = document.getElementById('logout-button');
 
     const handleLogin = (event) => {
         event.preventDefault();
@@ -16,7 +17,6 @@ document.addEventListener('DOMContentLoaded', function() {
             window.location.href = 'portfolio.html';
         } else {
             message.textContent = 'Invalid Credentials. Please try again.';
-            message.textContent = 'Passwords do not match.';
             message.style.color = 'rgb(255, 255, 255)';
             message.style.background = '#c85090';
             message.style.outline = 'none';
@@ -55,19 +55,6 @@ document.addEventListener('DOMContentLoaded', function() {
         }, 1500);
     };
 
-    const loadContent = (url) => {
-        fetch(url)
-            .then(response => response.text())
-            .then(data => {
-                container.innerHTML = data;
-                const name = localStorage.getItem('name');
-                if (name && url === 'home.html') {
-                    document.getElementById('welcome-message').textContent = `Welcome ${name} to the`;
-                }
-            })
-            .catch(error => console.error('Error loading content:', error));
-    };
-
     if (loginForm) {
         loginForm.addEventListener('submit', handleLogin);
     }
@@ -75,8 +62,6 @@ document.addEventListener('DOMContentLoaded', function() {
     if (registerForm) {
         registerForm.addEventListener('submit', handleRegister);
     }
-
-    const logoutButton = document.getElementById('logout-button');
 
     const handleLogout = () => {
         localStorage.removeItem('loggedIn');
@@ -90,8 +75,5 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
 
-    // Load default content
-    if (window.location.pathname.endsWith('portfolio.html')) {
-        loadContent('home.html');
-    }
+    // No content loading for the container is needed anymore.
 });
