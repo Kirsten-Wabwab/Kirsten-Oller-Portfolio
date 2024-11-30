@@ -1,7 +1,6 @@
 document.addEventListener('DOMContentLoaded', function() {
     const loginForm = document.getElementById('login-form');
     const registerForm = document.getElementById('register-form');
-    const container = document.querySelector('.container');
 
     const handleLogin = (event) => {
         event.preventDefault();
@@ -76,14 +75,6 @@ document.addEventListener('DOMContentLoaded', function() {
     if (registerForm) {
         registerForm.addEventListener('submit', handleRegister);
     }
-
-    document.querySelectorAll('nav ul li a').forEach(link => {
-        link.addEventListener('click', (event) => {
-            event.preventDefault();
-            const url = event.currentTarget.getAttribute('href');
-            loadContent(`${url}`);
-        });
-    });
 
     const logoutButton = document.getElementById('logout-button');
 
