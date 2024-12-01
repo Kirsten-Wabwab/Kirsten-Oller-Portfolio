@@ -1,0 +1,312 @@
+:root {
+    --color-primary: #009688;
+    --color-secondary: #4db6ac;
+    --color-background: #f0f8ff;
+    --color-text: #4a4a4a;
+    --color-white: #ffffff;
+    --color-accent: #e0f2f1;
+    --color-accent-hover: #b2dfdb;
+    --color-gold: #ffd700;
+    --font-size-large: 4rem;
+    --font-size-medium: 2.5rem;
+    --font-size-small: 1.2rem;
+    --font-size-xsmall: 1.1rem;
+}
+ body {
+            font-family: Quicksand, sans-serif;
+            background-color: var(--color-background);
+            color: var(--color-text);
+            line-height: 1.6
+        }
+
+        .btn-primary-custom {
+            color: #fff;
+            background-color: var(--color-accent);
+            border-color: var(--color-accent);
+            transition: background-color .3s, border-color .3s;
+            position: relative;
+            overflow: hidden;
+            font-size: var(--font-size-small);
+            padding: .75rem 1.75rem;
+        }
+
+        .btn-primary-custom:hover {
+            background-color: var(--color-accent-hover);
+            border-color: var(--color-accent-hover)
+        }
+
+        .btn-primary-custom::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: rgba(209, 194, 230, .3);
+            transition: left .3s ease
+        }
+
+        .btn-primary-custom:hover::after {
+            left: 0
+        }
+
+        .fade-in {
+            opacity: 1;
+            transform: translateY(0);
+            transition: opacity .8s ease-out, transform .8s ease-out
+        }
+
+        h2 {
+            font-family: Poppins, sans-serif;
+            font-weight: 700;
+            font-size: var(--font-size-medium);
+            color: var(--color-primary);
+            margin-bottom: 2rem;
+            text-align: center
+        }
+
+        .btn-primary {
+            background-color: var(--color-primary);
+            border-color: var(--color-primary);
+        }
+
+        .btn-primary:hover {
+            background-color: var(--color-secondary);
+            border-color: var(--color-secondary);
+        }
+
+        @keyframes count {
+            from {
+                counter-increment: count 0;
+            }
+
+            to {
+                counter-increment: count var(--target);
+            }
+        }
+
+        .contact-icon {
+            width: 70px;
+            height: 70px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, var(--color-primary), var(--color-secondary));
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 20px;
+        }
+
+        .contact-icon i {
+            font-size: 30px;
+            color: var(--color-white);
+        }
+
+        .contact-section {
+            position: relative;
+            background: linear-gradient(135deg, var(--color-background) 0, var(--color-white) 100%);
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .contact-wrapper {
+            background: var(--color-white);
+            border-radius: 20px;
+            padding: 40px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, .08);
+            transition: transform .3s ease;
+        }
+
+        .contact-wrapper:hover {
+            transform: translateY(-5px);
+        }
+
+        .social-links {
+            display: flex;
+            gap: 15px;
+            margin-top: 30px;
+            justify-content: center;
+        }
+
+        .social-link {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, var(--color-primary), var(--color-secondary));
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--color-white);
+            text-decoration: none;
+            transition: all .3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .social-link:before {
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(135deg, var(--color-secondary), var(--color-primary));
+            opacity: 0;
+            transition: opacity .3s ease;
+        }
+
+        .social-link:hover {
+            transform: translateY(-5px) rotate(360deg)
+        }
+
+        .social-link:hover:before {
+            opacity: 1
+        }
+
+        .social-link i {
+            position: relative;
+            z-index: 1
+        }
+
+        .business-hours {
+            background: linear-gradient(145deg, var(--color-white), var(--color-background));
+            border-radius: 15px;
+            padding: 20px;
+            margin-top: 30px;
+        }
+
+        .hours-list {
+            list-style: none;
+            padding: 0;
+        }
+
+        .hours-list li {
+            display: flex;
+            justify-content: space-between;
+            padding: 8px 0;
+            border-bottom: 1px dashed #e0daf9
+        }
+
+        .contact-form label {
+            font-weight: 500;
+            margin-bottom: 8px;
+            color: var(--color-text)
+        }
+
+        .form-floating {
+            position: relative;
+            margin-bottom: 20px
+        }
+
+        .form-floating label {
+            position: absolute;
+            top: 0;
+            left: 0;
+            padding: 1rem;
+            opacity: .65;
+            pointer-events: none;
+            transform-origin: 0 0;
+            transition: opacity .2s ease-in-out, transform .2s ease-in-out
+        }
+
+        .btn-animated {
+            background: linear-gradient(135deg, var(--color-primary), var(--color-secondary));
+            background-size: 200%;
+            transition: background-position .5s ease;
+            font-size: var(--font-size-small);
+            padding: .75rem 1.75rem;
+            color: #fff;
+        }
+
+        .btn-animated:hover {
+            background-position: right
+        }
+
+        html {
+            scroll-behavior: smooth
+        }
+
+        @keyframes click-animation {
+            0% {
+                transform: scale(1);
+            }
+
+            50% {
+                transform: scale(.9);
+            }
+
+            100% {
+                transform: scale(1);
+            }
+        }
+
+        .loading {
+            position: relative
+        }
+
+        .loading::after {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 20px;
+            height: 20px;
+            border: 3px solid var(--color-primary);
+            border-top: 3px solid transparent;
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+            transform: translate(-50%, -50%);
+        }
+
+        @keyframes spin {
+            0% {
+                transform: translate(-50%, -50%) rotate(0);
+            }
+
+            100% {
+                transform: translate(-50%, -50%) rotate(360deg);
+            }
+        }
+
+        .map-container {
+            height: 450px;
+            position: relative;
+        }
+
+        .map-wrapper {
+            height: 100%;
+            border: 2px solid var(--color-primary);
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+        }
+
+        .contact-section h2 {
+            font-family: Poppins, sans-serif;
+            font-weight: 700;
+            font-size: var(--font-size-medium);
+            color: var(--color-primary);
+            margin-bottom: 2rem
+        }
+
+        .contact-info-item h5 {
+            font-size: 1.5rem;
+            font-weight: 600
+        }
+
+        .contact-info-item p {
+            font-size: var(--font-size-small);
+        }
+
+        .business-hours h5 {
+            font-size: 1.5rem;
+            font-weight: 600
+        }
+
+        .business-hours li {
+            font-size: var(--font-size-small);
+        }
+
+        .contact-info-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+        }

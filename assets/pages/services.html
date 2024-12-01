@@ -9,6 +9,8 @@
     <link rel="stylesheet" href="../css/header-styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link rel="stylesheet" href="../css/service-styles.css">
+    <link rel="stylesheet" href="../css/subscription-styles.css">
+    <link rel="stylesheet" href="../css/client-styles.css">
 </head>
 <body>
     <nav class="navbar">
@@ -504,113 +506,218 @@
     
 
     <section class="pricing-section">
-    <h2 class="section-heading">Subscription Plans</h2>
-    <div class="pricing-container">
-        <div class="pricing-card">
-            <div class="pricing-header">
-                <h3>Standard</h3>
-                <p class="price">$19.99/month</p>
-            </div>
-            <div class="pricing-body">
-                <ul>
-                    <li><i class="fas fa-check-circle"></i> Basic Support</li>
-                    <li><i class="fas fa-check-circle"></i> Access to all services</li>
-                    <li><i class="fas fa-check-circle"></i> 5 Projects per month</li>
-                </ul>
-                <a href="#" class="btn">Subscribe</a>
+    <section id="product" class="product-section fade-in">
+        <div class="container">
+            <h2>Commission Rates</h2>
+            <br>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="feature-card card text-center h-100">
+                        <div class="card-body">
+                            <div class="plan-icon">
+                                <i class="fas fa-paper-plane"></i>
+                            </div>
+                            <h3 class="card-title">Art Commissions</h3>
+                            <p class="card-text">Wabwab provides different Art Commissions plans to suit your needs.</p>
+                            <ul class="list-unstyled">
+                                <li><i class="fas fa-check-circle text-success"></i> SKetches or Fully Rendered Artworks</li>
+                                <li><i class="fas fa-check-circle text-success"></i> Concept or Character Art</li>
+                                <li><i class="fas fa-check-circle text-success"></i> Backgrounds or Environments</li>
+                            </ul>
+                            <p class="card-text"><strong>Starting Price: PHP 500.00+</strong></p>
+                            <button class="btn btn-primary-custom btn-animated">Inquire Now</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="feature-card card text-center h-100 premium">
+                        <div class="card-body">
+                            <div class="plan-icon">
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <h3 class="card-title">Storyboards and Animation</h3>
+                            <p class="card-text">Wabwab offers Animations and Storyboarding plans for your visual needs.
+                            </p>
+                            <ul class="list-unstyled">
+                                <li><i class="fas fa-check-circle"></i> Short Storyboard</li>
+                                <li><i class="fas fa-check-circle"></i> Character Animation</li>
+                                <li><i class="fas fa-check-circle"></i> Fully Animated Videos</li>
+                            </ul>
+                            <p class="card-text"><strong>Starting Price: PHP 1500.00+</strong></p>
+                            <button class="btn btn-primary-custom btn-animated">Inquire Now</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="feature-card card text-center h-100">
+                        <div class="card-body">
+                            <div class="plan-icon">
+                                <i class="fas fa-rocket"></i>
+                            </div>
+                            <h3 class="card-title">Graphic and Web Design</h3>
+                            <p class="card-text">Wabwab creates stunning Graphic and Web Designs for your business needs.</p>
+                            <ul class="list-unstyled">
+                                <li><i class="fas fa-check-circle text-success"></i> Eye-catching Graphics</li>
+                                <li><i class="fas fa-check-circle text-success"></i> Interactive Web Design</li>
+                                <li><i class="fas fa-check-circle text-success"></i> Branding Packages</li>
+                            </ul>
+                            <p class="card-text"><strong>Starting Price: PHP 500.00+</strong></p>
+                            <button class="btn btn-primary-custom btn-animated">Inquire Now</button>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
-        <div class="pricing-card premium">
-            <div class="pricing-header">
-                <h3>Premium</h3>
-                <p class="price">$49.99/month</p>
-            </div>
-            <div class="pricing-body">
-                <ul>
-                    <li><i class="fas fa-check-circle"></i> Priority Support</li>
-                    <li><i class="fas fa-check-circle"></i> Access to all services</li>
-                    <li><i class="fas fa-check-circle"></i> 20 Projects per month</li>
-                    <li><i class="fas fa-check-circle"></i> Monthly Consultation</li>
-                </ul>
-                <a href="#" class="btn">Subscribe</a>
-            </div>
-        </div>
-        <div class="pricing-card">
-            <div class="pricing-header">
-                <h3>Enterprise</h3>
-                <p class="price">$99.99/month</p>
-            </div>
-            <div class="pricing-body">
-                <ul>
-                    <li><i class="fas fa-check-circle"></i> 24/7 Support</li>
-                    <li><i class="fas fa-check-circle"></i> Access to all services</li>
-                    <li><i class="fas fa-check-circle"></i> Unlimited Projects</li>
-                    <li><i class="fas fa-check-circle"></i> Weekly Consultation</li>
-                    <li><i class="fas fa-check-circle"></i> Dedicated Account Manager</li>
-                </ul>
-                <a href="#" class="btn">Subscribe</a>
-            </div>
-        </div>
-    </div>
+    </section>
+
 </section>
 
     <section class="testimonials-section">
-        <h2 class="section-heading">Testimonials</h2>
-        <div class="testimonials-container">
-            <div class="testimonial-card">
-                <p>"Kirsten's work is exceptional! She brought our vision to life with her amazing illustrations."</p>
-                <h4>- Client A</h4>
+        <h2 class="section-heading">What Our Clients Say</h2>
+        
+    <!-- Enhanced Testimonials Section -->
+        <div class="container">
+            <p class="text-center mb-5">We take pride in delivering excellent service to our clients. Here’s what they
+                have to say about us:</p>
+
+            <div class="testimonial-filters">
+                <button class="filter-btn active btn-primary-custom" data-filter="all">All</button>
+                <button class="filter-btn btn-primary-custom" data-filter="web">Art Commissions</button>
+                <button class="filter-btn btn-primary-custom" data-filter="mobile">Storyboards and Animation</button>
+                <button class="filter-btn btn-primary-custom" data-filter="cloud">Web/Graphic Design</button>
             </div>
-            <div class="testimonial-card">
-                <p>"The branding services provided by Kirsten were top-notch. Our brand identity has never been stronger."</p>
-                <h4>- Client B</h4>
+
+            <!-- Desktop View -->
+            <div class="row g-4 d-none d-md-flex">
+                <div class="col-md-4" data-category="web">
+                    <div class="feature-card card h-100 text-center p-4">
+                        <div class="verified-badge">
+                            <i class="fas fa-check-circle"></i> Verified Client
+                        </div>
+                        <div class="testimonial-icon">
+                            <i class="fas fa-quote-right"></i>
+                        </div>
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p class="card-text">"Their branding and website design transformed our online presence. The new
+                            logo helped us get recognized!"</p>
+                        <div class="d-flex align-items-center justify-content-center mt-3">
+                            <img src="https://i.pravatar.cc/150?img=33" class="client-image me-3" alt="Client">
+                            <div class="text-start">
+                                <h5 class="mb-0">Sarah Johnson</h5>
+                                <small class="text-muted">Marketing Director</small>
+                            </div>
+                        </div>
+                        <div class="mt-3">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/2/2f/Google_2015_logo.svg" class="company-icon" alt="Google Logo">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4" data-category="mobile">
+                    <div class="feature-card card h-100 text-center p-4">
+                        <div class="verified-badge">
+                            <i class="fas fa-check-circle"></i> Verified Client
+                        </div>
+                        <div class="testimonial-icon">
+                            <i class="fas fa-quote-right"></i>
+                        </div>
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                        <p class="card-text">"The storyboard they created for my project was even better than I imagined, Amazing work!!!"</p>
+                        <div class="d-flex align-items-center justify-content-center mt-3">
+                            <img src="https://i.pravatar.cc/150?img=11" class="client-image me-3" alt="Client">
+                            <div class="text-start">
+                                <h5 class="mb-0">Michael Chen</h5>
+                                <small class="text-muted">Product Manager</small>
+                            </div>
+                        </div>
+                        <div class="mt-3">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/4/44/Microsoft_logo.svg" class="company-icon" alt="Microsoft Logo">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4" data-category="cloud">
+                    <div class="feature-card card h-100 text-center p-4">
+                        <div class="verified-badge">
+                            <i class="fas fa-check-circle"></i> Verified Client
+                        </div>
+                        <div class="testimonial-icon">
+                            <i class="fas fa-quote-right"></i>
+                        </div>
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p class="card-text">"The graphic I commissioned for my advertisement really kicked off, will definitely come back again."</p>
+                        <div class="d-flex align-items-center justify-content-center mt-3">
+                            <img src="https://i.pravatar.cc/150?img=68" class="client-image me-3" alt="Client">
+                            <div class="text-start">
+                                <h5 class="mb-0">Emily Rodriguez</h5>
+                                <small class="text-muted">CTO</small>
+                            </div>
+                        </div>
+                        <div class="mt-3">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/a/a9/Amazon_logo.svg" class="company-icon" alt="Amazon Logo">
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="testimonial-card">
-                <p>"Highly recommend Kirsten for video production. The quality and creativity are outstanding."</p>
-                <h4>- Client C</h4>
-            </div>
-        </div>
-    </section>
-    <section class="faq-section">
-        <h2 class="section-heading">Frequently Asked Questions</h2>
-        <div class="faq-container">
-            <div class="faq-item">
-                <h3>What services do you offer?</h3>
-                <p>I offer a wide range of services including illustration, graphic design, animation, video production, web design, consultation, photography, branding, social media management, print design, UI/UX design, content creation, SEO optimization, marketing strategy, and project management.</p>
-            </div>
-            <div class="faq-item">
-                <h3>How can I get started?</h3>
-                <p>You can get started by contacting me through the contact page or by subscribing to one of the subscription plans. We can discuss your project requirements and come up with a plan that suits your needs.</p>
-            </div>
-            <div class="faq-item">
-                <h3>What is your pricing structure?</h3>
-                <p>I offer three subscription plans: Standard ($19.99/month), Premium ($49.99/month), and Enterprise ($99.99/month). Each plan includes different levels of support and access to services. You can find more details in the subscription plans section.</p>
-            </div>
-        </div>
-    </section>
+</section>
+
     <section class="blog-section">
-        <h2 class="section-heading">Latest Insights</h2>
-        <div class="blog-container">
-            <div class="blog-post">
-                <img src="../images/blog1.jpg" alt="Blog Post 1" class="blog-image">
-                <h3>Creating Engaging Character Designs</h3>
-                <p>Discover the process and techniques behind creating captivating character designs that tell a story.</p>
-                <a href="#" class="btn">Read More</a>
-            </div>
-            <div class="blog-post">
-                <img src="../images/blog2.jpg" alt="Blog Post 2" class="blog-image">
-                <h3>Animating Your Ideas</h3>
-                <p>Learn how to bring your ideas to life through animation, from concept to final product.</p>
-                <a href="#" class="btn">Read More</a>
-            </div>
-            <div class="blog-post">
-                <img src="../images/blog3.jpg" alt="Blog Post 3" class="blog-image">
-                <h3>Illustration Techniques for Beginners</h3>
-                <p>A beginner's guide to mastering the basics of digital illustration and improving your skills.</p>
-                <a href="#" class="btn">Read More</a>
-            </div>
+    <h2 class="section-heading">Latest Insights</h2>
+    <div class="blog-container">
+        <div class="blog-post">
+            <img src="../images/blog1.jpg" alt="Blog Post 1" class="blog-image">
+            <h3>Creating Engaging Character Designs</h3>
+            <p>Discover the process and techniques behind creating captivating character designs that tell a story.</p>
+            <a href="#" class="btn">Read More</a>
         </div>
-    </section>
+        <div class="blog-post">
+            <img src="../images/blog2.jpg" alt="Blog Post 2" class="blog-image">
+            <h3>Animating Your Ideas</h3>
+            <p>Learn how to bring your ideas to life through animation, from concept to final product.</p>
+            <a href="#" class="btn">Read More</a>
+        </div>
+        <div class="blog-post">
+            <img src="../images/blog3.jpg" alt="Blog Post 3" class="blog-image">
+            <h3>Illustration Techniques for Beginners</h3>
+            <p>A beginner's guide to mastering the basics of digital illustration and improving your skills.</p>
+            <a href="#" class="btn">Read More</a>
+        </div>
+        <div class="blog-post">
+            <img src="../images/blog4.jpg" alt="Blog Post 4" class="blog-image">
+            <h3>Effective Graphic Design Principles</h3>
+            <p>Explore the fundamental principles of graphic design and how to apply them to your projects.</p>
+            <a href="#" class="btn">Read More</a>
+        </div>
+        <div class="blog-post">
+            <img src="../images/blog5.jpg" alt="Blog Post 5" class="blog-image">
+            <h3>Mastering Digital Painting</h3>
+            <p>Learn the techniques and tools needed to create stunning digital paintings.</p>
+            <a href="#" class="btn">Read More</a>
+        </div>
+        <div class="blog-post">
+            <img src="../images/blog6.jpg" alt="Blog Post 6" class="blog-image">
+            <h3>Building a Strong Brand Identity</h3>
+            <p>Understand the key elements of brand identity and how to develop a cohesive brand strategy.</p>
+            <a href="#" class="btn">Read More</a>
+        </div>
+    </div>
+</section>
 </main>
 
     <footer class="footer">
